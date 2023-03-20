@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>JavaScript Demo</title>
+        <script>
+             // include your code here 
+
+             /*
+                this code gets loaded before the body 
+
+                if the code needs to execute before the BODY is complete
+             */
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="DoSomething()" >Click Me Second!</button>
+        <br/>
+        <button onclick="DoSomethingElse()" >Me First and Third!</button>
+        <br/>
+        Enter a Value: <input id ="Input"></input> 
+        <button onclick="loop()">Compute hailstone</button>
+        <br/>
+        <image id="goat" src="https://cdn.discordapp.com/attachments/980425522934849610/1085953200521236500/El-Goat.png" height = "500" width = "500"></image>
+        <br/>
+        <button id="btnBigger" >Bigger</button><button id="btnSmaller" >Smaller</button>
+        <script>
+            "use strict";
+            function DoSomething()
+            {
+                alert("foo");
+                globalVariable = "Hi";
+                return "asdf";
+            }
+            function DoSomethingElse()
+            {
+                alert(globalVariable);
+            }
+            function loop()
+            {
+                var input = document.getElementById("input").value;
+                const result = hailstone(input);
+                alert(result);
+            }
+            function Hailstone(x)
+            {
+                var count = 1 
+                while ( x > 1) 
+                {
+                    count++
+                    if ( x % 2 == 0 ) x = x/2;
+                    else
+                    {
+                        x = 3*x+1;
+                    }
+                }
+                return count;
+            }
+
+            // document.getElementById("goat").onclick = changePicture;
+            document.getElementById("btnBigger").onclick = handleBigger;
+            document.getElementById("btnSmaller").onclick = handleSmaller;
+            document.getElementById("goat").addEventListener("click", changePicture);
+            document.getElementById("goat").addEventListener("click", changePicture2);
+
+
+            function changePicture(event)
+            {
+                console.log(event.currentTarget.tagName);
+                event.currentTarget.src ="https://cdn.discordapp.com/attachments/980425522934849610/1082846748818538557/1660705096_Spinning_Sandwich.gif";
+            }
+            function changePicture2(event)
+            {
+                console.log(event.currentTarget.tagName);
+                event.currentTarget.src ="https://cdn.discordapp.com/attachments/980425522934849610/1082846748818538557/1660705096_Spinning_Sandwich.gif";
+            }
+
+            function handleSmaller(event)
+            {
+                console.log(event.currentTarget.tagName);
+                const image = document.getElementById("goat");
+                image.height = "100";
+                image.width = "100";
+            }
+
+
+            function handleBigger(event)
+            {
+                console.log(event.currentTarget.tagName);
+                const image = document.getElementById("goat");
+                image.height = "1024";
+                image.width = "1024";
+            }
+        </script>
+    </body>
+</html>
