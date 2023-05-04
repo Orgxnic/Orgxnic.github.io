@@ -1,0 +1,42 @@
+.submit{
+    background-color: orange; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:1rem;
+}
+
+.task-input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.newTask{
+    display: flex;
+    background-color: grey;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:1rem;
+    opacity:0.5px;
+}
+
+.delete{
+    padding:10px;
+    background-color:red;
+    border: 1px solid black; 
+    margin-bottom: 10px;
+    border-radius: 10px;  
+    
+}
+
+.counter {
+    border: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
