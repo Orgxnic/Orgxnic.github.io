@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Here's Your ToDo List</title>
+    <link rel="stylesheet" href="ToDo.css"/>
+</head>
+<body>
+    <header> 
+        <h1>Here's Your Todo List</h1>
+        <form id="taskForm">
+            <input type = "text"
+                   id = "task-input" 
+                   class="task-input"
+                   placeholder="input task to do">
+            </input>
+
+            <input type = "submit"
+                   class ="submit"
+                   id = "new-task-submission"
+                   value="Add Task">
+            </input>
+
+            <h2>Total Tasks:</h2>
+            <div class = "counter" id = "counter">0</div>
+        </form>
+    </header>
+
+    <main>
+        <section class = "tasksClass">
+            <h2> here are your tasks:</h2>
+            <div id= "tasks">
+            </div>
+        </section> 
+
+    </main>
+    <script src="ToDoList.js"></script>
+</body>
+</html>
