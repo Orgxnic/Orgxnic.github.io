@@ -48,6 +48,7 @@ window.addEventListener('load', () => {
           list_el.removeChild(taskElement);
           count -= 1;
           document.getElementById('counter').innerHTML = count;
+          
        })
     })
 })
