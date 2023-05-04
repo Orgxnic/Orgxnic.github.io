@@ -6,6 +6,8 @@ It's never too late to be who you might have been
     
 Don't say you can't until you prove you can't 
     -- Les Paul
-
+Links to use: 
 [References](references.html)
-
+[Tables](tables.html)
+[Cartoon](cartoons.html)
+[New-User](newuser.html)
